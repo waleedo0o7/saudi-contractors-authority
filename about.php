@@ -3,7 +3,7 @@
 
 <div class="page inner-page about">
 
-    <h1> hello i am about </h1>
+    <h1> hello i am about 2 </h1>
 
 </div> <!-- page -->
 
