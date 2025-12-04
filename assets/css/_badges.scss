@@ -1,0 +1,157 @@
+.badge {
+    padding: 10px 20px;
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--base-font-weight);
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.2;
+
+    &.badge-xxs {
+        height: 30px;
+        min-width: 30px;
+        padding: 4px;
+        border-radius: var(--border-radius-xs);
+        font-size: 11px;
+    }
+
+    &.badge-xs {
+        height: 26px;
+        min-width: 45px;
+        padding: 4px 8px;
+        font-size: .875rem;
+        border-radius: var(--border-radius-lg);
+        font-size: 12px;
+    }
+
+    &.badge-sm {
+        height: 40px;
+        padding: 6px 12px;
+        font-size: 0.875rem;
+    }
+
+    &.badge-lg {
+        height: 56px;
+        padding: 16px 32px;
+        font-size: 1.25rem;
+    }
+
+}
+
+
+.badge-primary-faded {
+    border: 1px solid;
+    color: var(--color-primary-light-400);
+    background-color: var(--color-primary-light-50);
+    border-color: transparent;
+}
+
+.badge-secondary-faded {
+    border: 1px solid;
+    color: var(--color-secondary-light-400);
+    background-color: var(--color-secondary-light-50);
+    border-color: transparent;
+}
+
+.badge-success-faded {
+    border: 1px solid;
+    color: var(--color-success-light-400);
+    background-color: var(--color-success-light-50);
+    border-color: transparent;
+}
+
+.badge-danger-faded {
+    border: 1px solid;
+    color: var(--color-danger-light-400);
+    background-color: var(--color-danger-light-50);
+    border-color: transparent;
+}
+
+.badge-warning-faded {
+    border: 1px solid;
+    color: var(--color-warning-light-400);
+    background-color: var(--color-warning-light-50);
+    border-color: transparent;
+}
+
+.badge-info-faded {
+    border: 1px solid;
+    color: var(--color-info-light-400);
+    background-color: var(--color-info-light-50);
+    border-color: transparent;
+}
+
+.badge-light-faded {
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+.badge-dark-faded {
+    color: #fff;
+    background-color: #343a40;
+}
+
+
+
+
+
+
+
+
+.badge-outline-primary-faded {
+    color: var(--color-primary-light-300);
+    background-color: var(--color-primary-light-50);
+    border: 1px solid;
+    border-color: var(--color-primary-light-300) !important;
+}
+
+.badge-outline-secondary-faded {
+    color: var(--color-secondary-light-300);
+    background-color: var(--color-secondary-light-50);
+    border: 1px solid;
+    border-color: var(--color-secondary-light-300) !important;
+}
+
+.badge-outline-success-faded {
+    color: var(--color-success-light-300);
+    background-color: var(--color-success-light-50);
+    border: 1px solid;
+    border-color: var(--color-success-light-300) !important;
+}
+
+.badge-outline-danger-faded {
+    color: var(--color-danger-light-300);
+    background-color: var(--color-danger-light-50);
+    border: 1px solid;
+    border-color: var(--color-danger-light-300) !important;
+}
+
+.badge-outline-warning-faded {
+    color: var(--color-warning-light-300);
+    background-color: var(--color-warning-light-50);
+    border: 1px solid;
+    border-color: var(--color-warning-light-300) !important;
+}
+
+.badge-outline-info-faded {
+    color: var(--color-info-light-300);
+    background-color: var(--color-info-light-50);
+    border: 1px solid;
+    border-color: var(--color-info-light-300) !important;
+}
+
+.badge-outline-light-faded {
+    color: #212529;
+    background-color: #f8f9fa;
+    border: 1px solid;
+    border-color: #212529 !important;
+}
+
+.badge-outline-dark-faded {
+    color: #fff;
+    background-color: #343a40;
+    border: 1px solid;
+    border-color: #343a40 !important;
+}

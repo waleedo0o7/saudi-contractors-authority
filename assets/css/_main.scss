@@ -1,0 +1,49 @@
+@use "../../node_modules/swiper/swiper-bundle.css";
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "icomoon/style.css";
+@import "_shared";
+@import "_helpers";
+@import "_forms";
+@import "_typography";
+@import "_colors";
+@import "_buttons";
+@import "_badges";
+
+// Other 
+@import "__layouts";
+@import "_intro-swiper";
+@import "__other";
+
+//////////////////////////////////////////////////////////////////////
+
+.image-wrapper {
+    position: absolute;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: -0px;
+        left: -0px;
+        background: #CCCCCC;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        border-radius: var(--border-radius-lg);
+        transform: rotate(5deg);
+        z-index: -1;
+    }
+
+}
+
+.bg-image {
+    background-image: url(../images/bg-1.svg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 0 0;
+}
+
+.bg-gradient {
+    background: linear-gradient(-279.07deg, #0C4A43 26.97%, #074D31 92.31%);
+    color: #fff;
+}

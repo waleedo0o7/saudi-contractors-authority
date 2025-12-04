@@ -1,0 +1,282 @@
+//////////// btn base styles ///////////
+
+.btn:focus,
+.btn.focus {
+    box-shadow: none !important;
+}
+
+.btn {
+    padding: 11px 13px;
+    border-radius: var(--border-radius-xs);
+    font-weight: 500;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 0s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-width: 1px;
+    font-size: calc(16px * var(--font-size-scale));
+
+
+    &.min-w-200 {
+        min-width: 200px;
+    }
+
+    &.min-w-170 {
+        min-width: 170px;
+    }
+
+    &.min-w-100 {
+        min-width: 100px;
+    }
+
+
+
+    &.btn-xxs {
+        height: 22px;
+        padding: 4px 6px;
+    }
+
+    &.btn-xs {
+        height: 32px;
+        padding: 8px;
+    }
+
+    &.btn-sm {
+        height: 36px;
+        padding: 5px 10px;
+    }
+
+    &.btn-lg {
+        height: 48px;
+        padding: 14px 22px;
+    }
+
+
+    &:focus,
+    &.focus {
+        text-decoration: none;
+    }
+
+
+}
+
+.btn-success {
+    color: #fff;
+}
+
+.btn-outline-success {
+
+    &:hover,
+    &:active {
+        color: #fff !important;
+    }
+}
+
+.btn-light {
+    background-color: var(--color-gray-light-200);
+    border-color: var(--color-gray-light-200);
+
+    &:hover,
+    &:active {
+        background-color: var(--color-gray-light-300);
+        border-color: var(--color-gray-light-300);
+        text-decoration: none !important;
+    }
+
+}
+
+
+
+.disabled,
+:disabled {
+    background-color: var(--color-gray-light-200) !important;
+    border-color: var(--color-gray-light-200) !important;
+    color: var(--color-gray-light-300) !important;
+
+    &:hover,
+    &:active {
+        background-color: var(--color-gray-light-200) !important;
+        border-color: var(--color-gray-light-200) !important;
+        color: var(--color-gray-light-300) !important;
+    }
+
+    i {
+        color: var(--color-gray-light-300) !important;
+    }
+
+}
+
+/////////// btn faded variants ///////////
+
+.btn-primary-faded {
+    color: var(--color-primary-light-300);
+    background-color: var(--color-primary-light-50);
+    border-color: var(--color-primary-light-300);
+
+    &:hover,
+    &:active {
+        color: var(--color-primary-light-500) !important;
+        background-color: var(--color-primary-light-300) !important;
+        border-color: var(--color-primary-light-500) !important;
+        color: #fff !important;
+
+    }
+
+
+}
+
+.btn-secondary-faded {
+    color: var(--color-secondary-light-300);
+    background-color: var(--color-secondary-light-50);
+    border-color: var(--color-secondary-light-300);
+
+    &:hover,
+    &:active {
+        color: var(--color-secondary-light-500) !important;
+        background-color: var(--color-secondary-light-300) !important;
+        border-color: var(--color-secondary-light-500) !important;
+        color: #fff !important;
+
+    }
+}
+
+.btn-success-faded {
+    color: var(--color-success-light-300);
+    background-color: var(--color-success-light-50);
+    border-color: var(--color-success-light-300);
+
+    &:hover,
+    &:active {
+        color: var(--color-success-light-500) !important;
+        background-color: var(--color-success-light-300) !important;
+        border-color: var(--color-success-light-500) !important;
+        color: #fff !important;
+
+    }
+
+
+}
+
+.btn-danger-faded {
+    color: var(--color-danger-light-300);
+    background-color: var(--color-danger-light-50);
+    border-color: var(--color-danger-light-300);
+
+    &:hover,
+    &:active {
+        color: var(--color-danger-light-500) !important;
+        background-color: var(--color-danger-light-300) !important;
+        border-color: var(--color-danger-light-500) !important;
+        color: #fff !important;
+
+    }
+
+
+}
+
+.btn-warning-faded {
+    color: var(--color-warning-light-300);
+    background-color: var(--color-warning-light-50);
+    border-color: var(--color-warning-light-300);
+
+    &:hover,
+    &:active {
+        color: var(--color-warning-light-500) !important;
+        background-color: var(--color-warning-light-300) !important;
+        border-color: var(--color-warning-light-500) !important;
+        color: #fff !important;
+
+    }
+
+
+}
+
+.btn-info-faded {
+    color: var(--color-info-light-300);
+    background-color: var(--color-info-light-50);
+    border-color: var(--color-info-light-300);
+
+    &:hover,
+    &:active {
+        color: var(--color-info-light-500) !important;
+        background-color: var(--color-info-light-300) !important;
+        border-color: var(--color-info-light-500) !important;
+        color: #fff !important;
+
+    }
+
+
+}
+
+.btn-light-faded {
+    background-color: var(--color-gray-light-200);
+    border-color: var(--color-gray-light-200);
+    border-color: var(--color-gray-light-300);
+
+
+    &:hover,
+    &:active {
+        background-color: var(--color-gray-light-300);
+        border-color: var(--color-gray-light-300);
+        text-decoration: none !important;
+        border-color: var(--color-gray-light-400);
+
+    }
+
+
+}
+
+.btn-dark-faded {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
+
+    &:hover,
+    &:active {
+        color: #fff;
+        background-color: hsl(210, 10.3448275862%, 15.2450980392%);
+        border-color: rgb(29.1379310345, 32.5, 35.8620689655);
+    }
+
+}
+
+//////////// additional button styles ///////////
+
+.btn-select-option {
+    background-color: var(--background-1-light);
+    color: var(--color-gray-light-400);
+    border-color: var(--color-gray-light-300);
+
+    &:hover,
+    &:active,
+    &.active {
+        background-color: var(--color-primary-light-50);
+        color: var(--color-primary-light-400);
+        border-color: var(--color-primary-light-400);
+    }
+
+}
+
+.btn-action {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &.btn-action-sm {
+        width: 38px;
+        height: 38px;
+    }
+
+    &.btn-action-lg {
+        width: 58px;
+        height: 58px;
+        font-size: calc(22px * var(--font-size-scale));
+    }
+}

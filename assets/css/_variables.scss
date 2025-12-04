@@ -1,0 +1,165 @@
+// override bootstrap primary color ( primary 300 )
+$primary: #067647;
+$secondary: #d000ff;
+$danger: #EB1F2D;
+$warning: #F1C735;
+$success: #50C879;
+$info: #1849A9;
+
+:root {
+
+    --font-size-scale: 1;
+
+    --color-primary: #{$primary};
+    --color-danger: #{$danger};
+    --color-success: #{$success};
+    --color-warning: #{$warning};
+
+    --color-primary-light-50: #F3FCF6;
+    --color-primary-light-75: #d7efe7;
+    --color-primary-light-100: #c2e7d8;
+    --color-primary-light-200: #8ccfb3;
+    --color-primary-light-300: #{$primary};
+    --color-primary-light-400: #055a3a;
+    --color-primary-light-500: #04482f;
+
+
+    --color-secondary-light-50: #f8e6ff;
+    --color-secondary-light-75: #f2d1ff;
+    --color-secondary-light-100: #ecbdff;
+    --color-secondary-light-200: #dd94ff;
+    --color-secondary-light-300: #{$secondary};
+    --color-secondary-light-400: #a600cc;
+    --color-secondary-light-500: #7d0099;
+
+
+    --color-success-light-50: #e8f8ef;
+    --color-success-light-75: #d5f3e2;
+    --color-success-light-100: #c2eed6;
+    --color-success-light-200: #97e2b8;
+    --color-success-light-300: #{$success};
+    --color-success-light-400: #3fa260;
+    --color-success-light-500: #317d4a;
+
+
+    --color-warning-light-50: #fff8df;
+    --color-warning-light-75: #fff2c5;
+    --color-warning-light-100: #ffecac;
+    --color-warning-light-200: #ffe07a;
+    --color-warning-light-300: #{$warning};
+    --color-warning-light-400: #c9a32a;
+    --color-warning-light-500: #9f8121;
+
+
+    --color-danger-light-50: #ffe6e8;
+    --color-danger-light-75: #ffd1d4;
+    --color-danger-light-100: #ffbcc0;
+    --color-danger-light-200: #ff8f97;
+    --color-danger-light-300: #{$danger};
+    --color-danger-light-400: #bf1924;
+    --color-danger-light-500: #96131c;
+
+
+    --color-info-light-50: #e3ecfa;
+    --color-info-light-75: #ccdafa;
+    --color-info-light-100: #b6c9f7;
+    --color-info-light-200: #89a7f4;
+    --color-info-light-300: #{$info};
+    --color-info-light-400: #133b88;
+    --color-info-light-500: #0e2d68;
+
+
+    --color-gray-light-200: #f3f4f6;
+    --color-gray-light-300: #D2D6DB;
+    --color-gray-light-400: #B5B5B5;
+
+
+    --color-text-200: #9DA4AE;
+    --color-text-300: #161616;
+
+    --background-1: #ffffff;
+    --background-2: #F9FAFB;
+    --background-3: #F3F4F6;
+
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+
+
+
+    /////////// END COLORS //////////
+
+    --font-size-lg: calc(18px * var(--font-size-scale));
+    --font-size-md: calc(14px * var(--font-size-scale));
+    --font-size-sm: calc(12px * var(--font-size-scale));
+
+
+    --font-weight-bold: 700;
+    --font-weight-semi-bold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+    --font-weight-extra-light: 200;
+
+    --border-radius-lg: 16px;
+    --border-radius: 10px;
+    --border-radius-md: 10px;
+    --border-radius-sm: 8px;
+    --border-radius-xs: 5px;
+
+    --custom-control-background-light: #FFFFFF;
+    --custom-control-background-dark: #1d1d1d;
+
+    /////////// END FONT VARS //////////
+
+    --swiper-theme-color: #{$primary};
+
+    --base-font-size: calc(16px * var(--font-size-scale));
+    --base-font-weight: var(--font-weight-regular);
+
+    --gap: 16px;
+    --base-border: 1px solid #dbd2d2;
+    --input-text-color: #161616;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+// Change bootstrap white bg to be in variable 
+// $body-bg: var(--background-1-light) !default;
+// $btn-default-bg: var(--background-1-light) !default;
+// $card-bg: var(--background-1-light) !default;
+// $dropdown-bg: var(--background-1-light) !default;
+// $input-bg: var(--background-1-light) !default;
+// $modal-content-bg: var(--background-1-light) !default;
+
+// Change Modals Sizes
+$modal-sm: 400px !default;
+$modal-md: 600px !default;
+$modal-lg: 1100px !default;
+$modal-xl: 1500px !default;
+
+// === Custom Breakpoints as Variables ===
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1250px;
+$breakpoint-2xl: 1600px; // for zoom 125%
+
+// === Override Bootstrap Breakpoints ===
+$grid-breakpoints: (
+    xs: $breakpoint-xs,
+    sm: $breakpoint-sm,
+    md: $breakpoint-md,
+    lg: $breakpoint-lg,
+    xl: $breakpoint-xl
+);
+
+// Override Container
+// $container-max-widths: (
+//     sm: 540px,
+//     md: 720px,
+//     lg: 960px,
+//     xl: 1140px
+// );
+
+$grid-gutter-width: 30px;

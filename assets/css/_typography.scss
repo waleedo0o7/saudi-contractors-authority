@@ -1,0 +1,108 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: var(--base-font-weight);
+    margin: 0px;
+}
+
+h1,
+.h1 {
+    font-size: calc(32px * var(--font-size-scale));
+}
+
+h2,
+.h2 {
+    font-size: calc(28px * var(--font-size-scale));
+}
+
+h3,
+.h3 {
+    font-size: calc(25px * var(--font-size-scale));
+}
+
+h4,
+.h4 {
+    font-size: calc(22px * var(--font-size-scale));
+}
+
+h5,
+.h5 {
+    font-size: calc(20px * var(--font-size-scale));
+}
+
+h6,
+.h6 {
+    font-size: calc(18px * var(--font-size-scale));
+}
+
+
+// .display-3 {
+//     font-size: calc(3rem * var(--font-size-scale));
+// }
+
+.display-4 {
+    font-size: calc(3.8rem * var(--font-size-scale));
+}
+
+.display-5 {
+    font-size: calc(3.1rem * var(--font-size-scale));
+}
+
+
+
+
+.font-size-large,
+.lead {
+    font-size: var(--font-size-lg);
+    font-weight: 400;
+}
+
+.font-size-base,
+.font-size-meduim {
+    font-size: var(--font-size-md);
+}
+
+.font-size-small {
+    font-size: var(--font-size-sm);
+}
+
+
+.font-weight-bold,
+.bold {
+    font-weight: var(--font-weight-bold);
+}
+
+
+.font-weight-semi-bold {
+    font-weight: var(--font-weight-semi-bold);
+}
+
+
+.font-weight-medium,
+.font-medium {
+    font-weight: var(--font-weight-medium);
+}
+
+.font-weight-regular,
+.font-regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.font-weight-light,
+.font-light {
+    font-weight: var(--font-weight-light);
+}
+
+.font-weight-extra-light,
+.font-extra-light {
+    font-weight: var(--font-weight-extra-light);
+}
