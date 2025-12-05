@@ -271,11 +271,11 @@ small,
     color: #FFF !important;
 }
 
- 
+
 .bg-gray {
     background-color: var(--background-2);
 }
- 
+
 
 .bg-black {
     background-color: #000;
@@ -507,12 +507,40 @@ small,
 }
 
 
+
+.row-gap-1 {
+    row-gap: .25rem !important;
+}
+
+.row-gap-2 {
+    row-gap: .5rem !important;
+}
+
+.row-gap-3 {
+    row-gap: 1rem !important;
+}
+
+.row-gap-4 {
+    row-gap: 30px !important;
+}
+
+.row-gap-5 {
+    row-gap: 3rem !important;
+}
+
+
+
 .aspect-ratio-1-1 {
     aspect-ratio: 1 / 1;
 }
 
 .aspect-ratio-427-383 {
     aspect-ratio: 427 / 383;
+}
+
+
+.aspect-ratio-1-1-2 {
+    aspect-ratio: 1 / 1.2;
 }
 
 ////////////// Width and Height utilities /////////

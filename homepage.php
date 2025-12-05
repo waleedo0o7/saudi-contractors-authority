@@ -199,7 +199,6 @@
 
     </section>
 
-
     <section class="news section-padding bg-gray">
 
         <div class="container">
@@ -280,8 +279,6 @@
 
                 </div>
 
-
-
                 <div class="pagination-and-buttons-wrapper">
 
                     <div class="swiper-button-prev" id="activities-button-prev">
@@ -298,29 +295,11 @@
 
                 </div>
 
-
             </div> <!-- swiper-slider-wrapper -->
-
-
-
-
-
 
         </div>
 
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

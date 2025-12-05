@@ -174,7 +174,7 @@ h6,
     padding-top: 50px;
     padding-bottom: 10px;
     position: relative;
-    background-color: #F9FAFB;
+    background-color: #FFF;
 
     @media all and (max-width : $breakpoint-xl) {
 
@@ -243,18 +243,16 @@ h6,
 
 .inner-content {
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     z-index: 3;
     position: relative;
-    min-height: 80vh;
+    min-height: 40vh;
 
     &.no-min-height {
         min-height: unset;
     }
 
-    @media all and (max-width : $breakpoint-xl) {
-        padding-top: 30px;
-    }
+
 }
 
 
@@ -1563,9 +1561,7 @@ button {
 }
 
 
-
-
-
+ 
 
 
 
