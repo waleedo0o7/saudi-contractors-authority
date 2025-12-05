@@ -96,9 +96,6 @@
 
                 </div>
 
-
-
-
                 <div class="flex-start gap-2 bg-light p-2 base-border-radius">
                     <img src="assets/images/icons-svg/DGA-logo-icon.svg" alt="Dga Logo">
                     <p class="font-medium m-0">
@@ -106,7 +103,6 @@
                     </p>
                     <a class="font-medium" href="https://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/4990">20240520402</a>
                 </div>
-
 
             </div>
 
@@ -169,34 +165,21 @@
                 </a>
 
                 <ul class="nav-links reset-list flex-start">
-                    <li class="nav-item"><a class="nav-link" href="homepage.php"> الرئيسية </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> عن الهيئة </a></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="homepage.php"> الرئيسية </a></li>
 
                     <li class="nav-item dropdown" onmouseover="this.classList.add('show'); this.querySelector('.dropdown-menu').classList.add('show');" onmouseout="this.classList.remove('show'); this.querySelector('.dropdown-menu').classList.remove('show');">
-                        <a class="nav-link dropdown-toggle active" href="our-work.php" id="ourWorkDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            عضوية الهيئة
+                        <a class="nav-link dropdown-toggle" href="#" id="ourWorkDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            عن الهيئة
                         </a>
                         <div class="dropdown-menu" aria-labelledby="ourWorkDropdown">
-                            <a class="dropdown-item" href="our-work.php"> عضوية ذهبية </a>
-                            <a class="dropdown-item active" href="our-work.php"> عضوية فضية </a>
-                            <a class="dropdown-item" href="our-work.php"> عضوية خشبية </a>
+                            <a class="dropdown-item" href="about.php"> عن الهيئة </a>
+                            <a class="dropdown-item " href="board.php"> مجلس الادارة </a>
                         </div>
                     </li>
 
-                    
-                    <li class="nav-item dropdown" onmouseover="this.classList.add('show'); this.querySelector('.dropdown-menu').classList.add('show');" onmouseout="this.classList.remove('show'); this.querySelector('.dropdown-menu').classList.remove('show');">
-                        <a class="nav-link dropdown-toggle " href="our-work.php" id="ourWorkDropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            عضوية الهيئة
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="ourWorkDropdown">
-                            <a class="dropdown-item" href="our-work.php"> عضوية ذهبية </a>
-                            <a class="dropdown-item" href="our-work.php"> عضوية فضية </a>
-                            <a class="dropdown-item" href="our-work.php"> عضوية خشبية </a>
-                        </div>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"> الخطة الإستراتيجية </a></li>
 
-                    
-                    <li class="nav-item"><a class="nav-link" href="#"> الخدمات الإلكترونية </a></li>
                 </ul>
 
             </div>
