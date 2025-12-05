@@ -215,7 +215,8 @@ small,
     border-radius: var(--border-radius-lg) !important;
 }
 
-.base-border-radius {
+.base-border-radius,
+.border-radius-md {
     border-radius: var(--border-radius);
 }
 

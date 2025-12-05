@@ -208,3 +208,17 @@
 }
 
 .activities-card {}
+
+
+.board-card {
+    @extend .card;
+    @extend .h-100;
+    @extend .no-border;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .108) !important;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+
+
+}

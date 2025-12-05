@@ -128,7 +128,7 @@
 
                             <?php
 
-                            $mediaMenuData = [
+                            $valuesData = [
                                 [
                                     "title" => "الشراكة",
                                     "image" => "values-1.svg"
@@ -162,7 +162,7 @@
 
                             ?>
 
-                            <?php foreach ($mediaMenuData as $index => $item): ?>
+                            <?php foreach ($valuesData as $index => $item): ?>
 
                                 <div class="col-lg-4">
 
@@ -196,9 +196,6 @@
             <div class="container">
 
                 <h1 class="bold mb-3"> المحاور والأهداف الاستراتيجية لتحقيق التوجه الاستراتيجي </h1>
-
-
-
 
                 <div class="custom-accordion">
                     <div class="accordion-item">
