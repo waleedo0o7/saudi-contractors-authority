@@ -2,6 +2,7 @@
 @import "variables";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "icomoon/style.css";
+@import "_swiper";
 @import "_shared";
 @import "_helpers";
 @import "_forms";
@@ -18,7 +19,7 @@
 //////////////////////////////////////////////////////////////////////
 
 .image-wrapper {
-    position: absolute;
+    position: relative;
 
     &:before {
         content: "";
@@ -47,3 +48,163 @@
     background: linear-gradient(-279.07deg, #0C4A43 26.97%, #074D31 92.31%);
     color: #fff;
 }
+
+
+
+
+.service-card {
+
+    .service-icon-wrapper {
+        background-color: #f3fcf6;
+        border-radius: 500px;
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wishlist-wrapper {
+        background-color: #f3f4f6;
+        border: 1px solid #d2d6db;
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+            font-size: 22px;
+            line-height: 0;
+        }
+
+        &.active {
+            background-color: var(--color-primary-light-300);
+            border: 1px solid var(--color-primary-light-300);
+
+            i {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.news-card-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.108) !important;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    padding: 10px;
+
+    @media all and (max-width : $breakpoint-xl) {
+        flex-direction: column;
+    }
+
+    &:hover {
+        background-color: var(--color-primary-light-100);
+        border-color: var(--color-primary-light-300);
+        text-decoration: none;
+
+
+    }
+
+    .start {
+
+        @media all and (max-width : $breakpoint-xl) {
+            width: 100%;
+        }
+
+        .news-image {
+            width: 170px;
+            height: 130px;
+            min-width: 170px;
+            min-height: 130px;
+            object-fit: cover;
+            border-radius: var(--border-radius-md);
+
+            @media all and (max-width : $breakpoint-xl) {
+                width: 100%;
+                height: 180px;
+            }
+
+        }
+    }
+
+    .end {
+        padding-inline-start: 15px;
+    }
+
+    .show-more-btn {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0px);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.news-card-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.108) !important;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    padding: 15px;
+
+
+    &:hover {
+        background-color: var(--color-primary-light-100);
+        border-color: var(--color-primary-light-300);
+        text-decoration: none;
+
+
+    }
+
+
+
+
+    .start {
+        width: 100%;
+
+        .news-image {
+            width: 100%;
+            height: 356px;
+            object-fit: cover;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.108) !important;
+        }
+    }
+
+    .end {
+        padding: 20px;
+
+        @media all and (max-width : $breakpoint-xl) {
+            width: calc(100% - 60px);
+        }
+
+        .show-more-btn {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0px);
+            transition: all 0.3s ease-in-out;
+        }
+
+    }
+}
+
+.activities-card {}

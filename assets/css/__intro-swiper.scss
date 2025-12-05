@@ -1,12 +1,33 @@
 .intro-swiper-wrapper {
+    .swiper-slider-wrapper {
 
-    .slide-content {
-        padding: 120px 0;
-        background-position: center;
-        background-size: cover;
-        color: #fff;
+
+
+        .swiper-container {
+            margin-bottom: 0;
+
+            .slide-content {
+                padding: 170px 0;
+                background-position: center;
+                background-size: cover;
+                color: #fff;
+            }
+        }
+
+
+        .pagination-and-buttons-wrapper {
+            margin-top: 0px;
+            transform: translate(0, -60px) !important;
+            position: relative;
+            z-index: 1;
+        }
 
     }
+
+
+
+
+
 
 
 }
