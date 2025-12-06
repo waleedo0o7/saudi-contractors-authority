@@ -70,16 +70,22 @@ function toggleMobileSearch() {
 $('.swiper-custom:not(.swiper-initialized)').each(function (index, element) {
 
     let $el = $(element);
+
     let swiperName = `swiper${index}`;
 
     let nextButtonId = $el.attr('data-next-button');
-    let prevButtonId = $el.attr('data-prev-button');
-    let paginationId = $el.attr('data-pagination');
-    let paginationType = $el.attr('data-pagination-type') || 'bullets'; // bullets - progressbar 
-    let nextButton = nextButtonId ? document.getElementById(nextButtonId) : null;
-    let prevButton = prevButtonId ? document.getElementById(prevButtonId) : null;
-    let paginationEl = paginationId ? document.getElementById(paginationId) : null;
 
+    let prevButtonId = $el.attr('data-prev-button');
+
+    let paginationId = $el.attr('data-pagination');
+
+    let paginationType = $el.attr('data-pagination-type') || 'bullets'; // bullets - progressbar 
+
+    let nextButton = nextButtonId ? document.getElementById(nextButtonId) : null;
+
+    let prevButton = prevButtonId ? document.getElementById(prevButtonId) : null;
+
+    let paginationEl = paginationId ? document.getElementById(paginationId) : null;
 
     let spaceBetween = $el.attr('data-space-between') || 10;
 
@@ -93,13 +99,14 @@ $('.swiper-custom:not(.swiper-initialized)').each(function (index, element) {
 
     let effect = $el.attr('data-effect') || 'slide' // slide - fade - coverflow - creative - cards  ;
 
-
     let centeredSlides = $el.attr('data-centered-slides') || false; // true - false
 
     let initialSlide = $el.attr('data-initial-slide') || 0; // 0 - 1 - 2 - 3 - 4    
 
+    let loopSlide = $el.attr('data-loop-slides') || false; // true - false
+
     let options = {
-        loop: false,
+        loop: loopSlide,
         slidesPerView: perViewXs,
         spaceBetween: 5,
         effect: effect,
@@ -140,7 +147,60 @@ $('.swiper-custom:not(.swiper-initialized)').each(function (index, element) {
     allSwipers[swiperName] = swiperInstance;
     // console.log(`Initialized ${swiperName}`);
 
+
 });
+
+
+
+
+$(document).ready(function () {
+
+    const swiper = new Swiper(".membership-swiper", {
+        loop: true,
+        slidesPerView: 5,
+        centeredSlides: true,
+        initialSlide: 2,
+
+
+        navigation: {
+            nextEl: '#membership-swiper-button-next',
+            prevEl: '#membership-swiper-button-prev',
+            clickable: true,
+        },
+
+
+        pagination: {
+            el: '#membership-swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+
+
+
+        on: {
+            slideChange: function () {
+                // نشيل الكلاسات القديمة
+                this.slides.forEach(slide => {
+                    slide.classList.remove('before-prev', 'after-next');
+                });
+
+                // العنصر قبل prev
+                const prevSlide = this.slides[this.activeIndex - 1] || this.slides[this.slides.length - 1];
+                const beforePrevIndex = (this.slides.indexOf(prevSlide) - 1 + this.slides.length) % this.slides.length;
+                this.slides[beforePrevIndex].classList.add('before-prev');
+
+                // العنصر بعد next
+                const nextSlide = this.slides[this.activeIndex + 1] || this.slides[0];
+                const afterNextIndex = (this.slides.indexOf(nextSlide) + 1) % this.slides.length;
+                this.slides[afterNextIndex].classList.add('after-next');
+            }
+        }
+    });
+
+
+
+});
+
 
 
 

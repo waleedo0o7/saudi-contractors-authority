@@ -213,9 +213,6 @@
             </div> <!-- ds-sub-section -->
 
 
-
-
-
             <div class="ds-sub-section mb-5">
 
                 <h3 class="text-left mb-4"> Test 5 swiper </h3>
@@ -252,7 +249,7 @@
 
 
 
-                    <div class="pagination-and-buttons-wrapper" style="background-color: #353535;">
+                    <div class="pagination-and-buttons-wrapper light-theme" style="background-color: #353535;">
 
                         <div class="swiper-button-prev" id="test5-button-prev">
                             <i class="icon icon-arrow-left"></i>
@@ -274,12 +271,66 @@
 
             </div> <!-- ds-sub-section -->
 
-
-
-
-
-
         </div> <!-- container -->
+
+        <div class="ds-sub-section mb-5 py-5 bg-gradient">
+
+            <div class="container">
+
+                <h3 class="text-left mb-4"> Test 6 swiper </h3>
+
+                <div class="col-md-9">
+
+                    <div class="swiper-slider-wrapper pagination-bottom membership-slider">
+
+                        <div class="swiper-container membership-swiper">
+
+                            <div class="swiper-wrapper">
+
+                                <?php foreach (range(1, 12) as $inner_i) { ?>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="px-3 py-4 text-center" style="background-color: #376f59;">
+
+                                            <img src="assets/images/icons-svg/icon-1.svg" class="w-50px mb-3">
+
+                                            <p class="small"> أنشطة تقديم الخدمات للمباني وتجميل المواقع </p>
+
+                                        </div> <!-- card -->
+
+                                    </div>
+
+                                <?php } ?>
+
+                            </div>
+
+                        </div>
+
+                        <div class="pagination-and-buttons-wrapper light-theme">
+
+                            <div class="swiper-button-prev" id="membership-swiper-button-prev">
+                                <i class="icon icon-arrow-left"></i>
+                            </div>
+
+                            <div class="pagination-wrapper">
+                                <div class="swiper-pagination" id="membership-swiper-pagination"></div>
+                            </div>
+
+                            <div class="swiper-button-next" id="membership-swiper-button-next">
+                                <i class="icon icon-arrow-right"></i>
+                            </div>
+
+                        </div>
+
+
+                    </div> <!-- swiper-slider-wrapper -->
+
+                </div>
+
+            </div>
+
+        </div> <!-- ds-sub-section -->
 
     </div> <!-- ds-section -->
 

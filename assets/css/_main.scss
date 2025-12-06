@@ -49,9 +49,6 @@
     color: #fff;
 }
 
-
-
-
 .service-card {
 
     .service-icon-wrapper {
@@ -207,18 +204,132 @@
     }
 }
 
-.activities-card {}
-
-
 .board-card {
     @extend .card;
     @extend .h-100;
     @extend .no-border;
     box-shadow: 0 0 25px rgba(0, 0, 0, .108) !important;
-
     align-items: flex-start;
     justify-content: space-between;
+}
 
+.membership-swiper-col {
+    overflow: hidden;
+    min-height: 360px;
+}
 
+.membership-swiper-wrapper {
+    width: 120%;
+    margin-inline-start: -10%;
+    position: relative;
+    min-height: 290px;
+
+    .swiper-wrapper {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+
+    .swiper-slide {
+        padding: 5px;
+        transform: scale(0.6);
+        transition: all 0.3s;
+        transform: translate(0, 20px);
+
+        &.before-prev {
+            transform: translate(110px, 20px);
+
+        }
+
+        &.swiper-slide-prev {
+            transform: translate(40px, 0);
+            z-index: 8;
+
+            .membership-icon {
+                opacity: 0.5;
+            }
+        }
+
+        &.swiper-slide-active {
+            transform: scale(1.5);
+            z-index: 9;
+
+            .membership-card {
+
+                .membership-icon {
+                    width: 50px;
+                    margin-bottom: 10px;
+                    opacity: 1;
+                }
+
+                .text {
+                    opacity: 1;
+                    height: 30px;
+                    margin: 0 !important;
+                }
+            }
+        }
+
+        &.swiper-slide-next {
+            transform: translate(-40px, 0);
+            z-index: 8;
+
+            .membership-icon {
+                opacity: 0.5;
+            }
+
+        }
+
+        &.after-next {
+            transform: translate(-110px, 20px);
+        }
+
+    }
+
+    .pagination-and-buttons-wrapper {
+        position: absolute;
+        bottom: -70px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+}
+
+img.membership-shape {
+    width: 320px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.membership-card {
+    background-color: #376f59;
+    text-align: center;
+    @extend .px-3;
+    @extend .py-4;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
+
+    * {
+        transition: all 0.3s;
+    }
+
+    .membership-icon {
+        width: 65px;
+        margin-bottom: 0px;
+        opacity: 0.2;
+    }
+
+    .text {
+        opacity: 0;
+        height: 0;
+        margin: 0;
+        font-size: 11px;
+    }
 
 }

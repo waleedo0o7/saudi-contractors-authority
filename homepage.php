@@ -58,6 +58,44 @@
 
                 </div>
 
+                <div class="social-media-icons-wrapper">
+
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-facebook"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-youtube"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-snapchat"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-x-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="icon icon-instagram"></i>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
             </div>
 
             <div class="pagination-and-buttons-wrapper light-theme">
@@ -116,9 +154,9 @@
 
         <div class="container">
 
-            <div class="row">
+            <div class="row align-items-center flex-between">
 
-                <div class="col-lg-6">
+                <div class="col-lg-5">
 
                     <h1 class="mb-3"> عضوية الهيئة السعودية للمقاولين </h1>
 
@@ -128,8 +166,58 @@
 
                 </div>
 
+                <div class="col-md-6 membership-swiper-col">
 
-                <div class="col-lg-6"></div>
+                    <div class="swiper-slider-wrapper pagination-bottom membership-swiper-wrapper">
+
+                        <img src="assets/images/icons-svg/membership-shape.svg" class="membership-shape">
+
+                        <div class="swiper-container membership-swiper">
+
+                            <div class="swiper-wrapper">
+
+                                <?php foreach (range(1, 8) as $inner_i) { ?>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="membership-card">
+
+                                            <img src="assets/images/icons-svg/membership-icon-<?= $inner_i ?>.svg" class="membership-icon">
+
+                                            <p class="text"> أنشطة تقديم الخدمات للمباني وتجميل المواقع </p>
+
+                                        </div> <!-- card -->
+
+                                    </div>
+
+                                <?php } ?>
+
+                            </div>
+
+                        </div>
+
+                        <div class="pagination-and-buttons-wrapper light-theme">
+
+                            <div class="swiper-button-prev" id="membership-swiper-button-prev">
+                                <i class="icon icon-arrow-left"></i>
+                            </div>
+
+                            <div class="pagination-wrapper">
+                                <div class="swiper-pagination" id="membership-swiper-pagination"></div>
+                            </div>
+
+                            <div class="swiper-button-next" id="membership-swiper-button-next">
+                                <i class="icon icon-arrow-right"></i>
+                            </div>
+
+                        </div>
+
+
+                    </div> <!-- swiper-slider-wrapper -->
+
+                </div>
+
+
 
 
             </div>
@@ -139,7 +227,7 @@
 
     </section>
 
-    <section class="section-padding bg-white">
+    <section class="services section-padding bg-white">
 
         <div class="container">
 
